@@ -1,0 +1,40 @@
+/* box divi css kodlari */
+
+div.box {
+    /* background-color: blanchedalmond; */
+    /* background-image: url('https://www.w3schools.com/css/mountain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: url('https://www.w3schools.com/css/mountain.jpg') no-repeat center top;
+    background-size: cover;
+    width: 60%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.box h1.title {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: rgb(2, 58, 39);
+}
+
+.box p.paragraph {
+    color: grey;
+}
+
+.box a {
+    color: blue;
+}
+
+div.info {
+    background: rgb(36, 166, 247);
+    margin: 20px 0 0 0;
+    padding: 7px;
+    border-left: 3px solid red;
+
+    width: 450px;
+    min-height: 100px;
+
+}

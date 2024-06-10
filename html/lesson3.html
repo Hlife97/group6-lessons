@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3</title>
+
+    <style>
+        .container {
+            background-color: rgb(10, 164, 156);
+            color: white;
+            width: 650px;
+            border-radius: 10px;
+            padding: 15px
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container .paragraph {
+            font-size: 20px;
+        }
+
+        .container .info {
+            text-align: center;
+            font-size: 18px;
+            color: purple;
+        }
+
+        .container div.info {
+            background-color: yellow;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+
+
+        form input:not([type="radio"], [type="checkbox"]) {
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        /* Tablet */
+        @media(max-width: 768px) {
+            .container div.info {
+                background-color: red;
+            }
+        }
+
+        /* Telefon */
+        @media(max-width: 425px) {
+            .container div.info {
+                background-color: rgb(142, 102, 102);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <div class="container">
+        <h1>Hello I learn HTML</h1>
+
+        <a href="https://hidayetov.com/" target="_blank">Linke kec</a>
+
+        <p class="paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente corporis recusandae excepturi neque,
+            incidunt minima quibusdam perferendis officia, id magnam porro provident in? Consequatur dignissimos beatae,
+            deleniti quia cumque et nemo. Aspernatur, odit maiores? Nulla suscipit aliquid non voluptatem debitis? Nam
+            omnis placeat, corrupti facere aliquam numquam. Voluptate totam, asperiores similique enim dolorum quaerat?
+        </p>
+
+        <!-- fila path => fayl yolu -->
+        <!-- 
+            ./, / , 'birbasa' => eyni qovlugda olanlari getirir veya gosterir
+            ../ -> bu bir geri cix demekdir, yeni bir qovluqdan bir ust qovluga get demekdir.
+
+         -->
+        <!-- <img src="./kurs.jpeg" alt="kurs" width="300"> -->
+        <img src="../img/kurs.jpeg" title="bu kurs seklidir" alt="kurs" width="300">
+
+        <p class="info">Lorem ipsum dolor sit amet.</p>
+
+        <div class="info">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </div>
+
+        <form target="_blank">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Your Name...">
+
+
+            <label for="">Mail:</label>
+            <input type="email" placeholder="example@gmail.com">
+
+            <label for="">Password:</label>
+            <input type="password" placeholder="Your Name..." id="password">
+
+            <label for="men">Kisi</label>
+            <input type="radio" name="cinsiyyet" id="men">
+
+            <label for="women">Qadin</label>
+            <input type="radio" name="cinsiyyet" id="women">
+
+            <p>Bacariqlari secin</p>
+
+            <label for="">html</label>
+            <input type="checkbox" name="" id="">
+
+            <label for="">css</label>
+            <input type="checkbox" name="" id="">
+
+            <label for="">js</label>
+            <input type="checkbox" name="" id="">
+
+            <br>
+            <br><br>
+            <label for="">Birthday</label>
+            <input type="date" name="" id="">
+            <br>
+            <button>Register</button>
+        </form>
+    </div>
+
+    <div>
+        <iframe src="./lesson2.html" width="1000" height="500" frameborder="0"></iframe>
+    </div>
+
+    <div>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/BVQz9JyzFdo" title="Video " frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <iframe title="Quba xeritesi"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47912.16911735072!2d48.50950955!3d41.3629907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403795fdd1d1104f%3A0x4d72ce05a0c9228d!2sQuba!5e0!3m2!1sen!2saz!4v1707731551290!5m2!1sen!2saz"
+            width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+</body>
+
+</html>
